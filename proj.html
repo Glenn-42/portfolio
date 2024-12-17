@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    #imgprg {
+        height:400px;
+        width: 400px;
+
+    }
+    body {
+      background-color: #d6f1ff;
+    }
+
+    .projects-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .projects-section h2 {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .project-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: white;
+      height: 100%;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: fill;
+      border-radius: 8px;
+    }
+
+    .project-buttons {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container projects-section">
+    <h2>My Projects</h2>
+    <p>These are the Projects which i have created during the beginnings, created an IOT project which collect the data's from the various sensor in real time data is transmitted to a cloud server, enabling remote access via a user friendly web interface.</p>
+
+<!-- Modal Email Automation -->
+<div class="modal fade" id="staticBackdropemail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Email Automation </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="card">
+                <img src="emailauto.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Email Automation</h5>
+                  <p class="card-text text-md-start"><br>
+                    Email automation is the process of creating a system that sends emails automatically based on predefined schedules or triggers. To achieve this, we utilized Python and its powerful libraries. First, we set up the environment by installing necessary libraries like smtplib for sending emails, ssl for secure connections, and schedule for task scheduling. The email credentials were securely managed using environment variables to avoid exposing sensitive information. Next, we wrote a script to define the sender, recipient, email subject, and body. The EmailMessage class was used to structure the email, and the smtplib library, in combination with an SSL context, established a secure connection with the Gmail SMTP server to send the email. To automate the process, we integrated the schedule library, which allowed the email to be sent at regular intervals—every minute in our case. The script continuously runs in a loop, checking and executing the scheduled task. This approach demonstrates how email automation can be efficiently implemented for use cases like notifications, updates, or marketing campaigns.
+                    	
+                    <img src="Screenshot (177)prg.png" id="imgprg" alt="">
+                    <p>
+                        The code automates email sending by using Python libraries like smtplib for SMTP communication, EmailMessage to structure the email, and ssl for secure connections. The sender, recipient, subject, and body are defined, and the send_email function connects to Gmail's SMTP server to send the email securely. The schedule library runs this function every minute in a continuous loop, ensuring emails are sent automatically at regular intervals.</p>
+                        <img src="Screenshot (176).png" alt="">
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Modal iot-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Internet Of Things </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="card">
+                <img src="IoT-based-remote-Cloud.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Patient Health Monitoring System using IOT</h5>
+                  <p class="card-text text-md-start">The IoT-Based Patient Health Monitoring System is an innovative solution designed to enhance patient care through real-time monitoring of vital health parameters. This project leverages advanced Internet of Things (IoT) technologies to enable continuous tracking of patient health metrics, allowing healthcare providers to make informed decisions quickly and efficiently.<br>
+                    	<center><b>Objectives:<br><br></b></center>
+                    •	To develop a system that continuously monitors vital health parameters, including heart rate, blood oxygen saturation (SpO2), body temperature, and environmental conditions (humidity and temperature).<br>
+                    •	To provide real-time data transmission to healthcare professionals through a user-friendly mobile application.<br>
+                    •	To enable early detection of potential health issues through timely alerts and notifications.<br>
+                    •	To facilitate remote patient monitoring, reducing the need for frequent hospital visits and improving the overall efficiency of healthcare delivery.<br><br>
+                        <center><b>System Components/Sensor<br></b></center>
+                    •	MAX30100/102 Pulse Oximeter: Measures heart rate and SpO2 levels.<br>
+                    •	DS18B20 Temperature Sensor Monitors body temperature.<br>
+                    •	DHT11 Humidity & Temperature Sensor Tracks ambient humidity and temperature.<br><br>
+                    	<center><b>Microcontroller<br></b></center>
+                    •	ESP32: Acts as the central processing unit, collecting data from sensors and transmitting it to the cloud via Wi-Fi.<br><br>
+                    	<center><b>Cloud Platform:<br></b></center>
+                    •	Blynk: An IoT platform that enables real-time monitoring and data visualization through a mobile application.<br><br>
+                    	<b>Functionality<br></b>
+                    •	The system operates by continuously collecting data from the sensors connected to the ESP32 microcontroller. This data is transmitted to the Blynk cloud, where it is processed and made accessible through the Blynk mobile app. Users can monitor patient health metrics in real time, receive 
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Understood</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="row md-4">
+      <div class="col-md-6 col-lg-6">
+        <div class="project-card">
+          <img src="iot2.jpg" alt="IOT">
+          <h3>Internet Of Things</h3>
+          <p>This is from one of the very first projects I've ever made it while learning Web-dev and IOT from a particular course and this project was part of that.</p>
+          <div class="project-buttons">
+           
+                <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    More Info
+  </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="project-card">
+            <img src="auto.png" alt="Email">
+            <h3>Email Automation</h3>
+            <p>This is a Email Automation I've created during internship period. I had used python as core also some python packages</p>
+           
+            <div class="project-buttons">
+
+             
+                  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropemail">
+      More Info
+    </button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
